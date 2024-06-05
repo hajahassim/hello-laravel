@@ -15,9 +15,6 @@ Route::get('/counter', function () {
     return view('view_counter');
 })->middleware(['auth', 'verified'])->name('counter');
 
-Route::get('/post', function () {
-    return view('post.view');
-})->middleware(['auth', 'verified'])->name('post.list');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

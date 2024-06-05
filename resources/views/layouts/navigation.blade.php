@@ -19,10 +19,6 @@
                     <x-nav-link :href="route('counter')" :active="request()->routeIs('counter')">
                         {{ __('Counter') }}
                     </x-nav-link>
-
-                    <x-nav-link :href="route('post.list')" :active="request()->routeIs('post.list')">
-                        {{ __('PostList') }}
-                    </x-nav-link>
                 </div>
             </div>
 
