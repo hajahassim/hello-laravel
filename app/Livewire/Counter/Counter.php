@@ -7,6 +7,7 @@ use Livewire\Component;
 class Counter extends Component
 {
 
+
     public $counter =1;
 
     public $close=true;
